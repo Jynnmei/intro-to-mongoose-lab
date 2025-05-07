@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.14.1",
+    "prompt-sync": "^4.2.0",
+    "uuid": "^11.1.0"
+  },
+  "name": "intro-to-mongoose-lab",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jynnmei/intro-to-mongoose-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Jynnmei/intro-to-mongoose-lab/issues"
+  },
+  "homepage": "https://github.com/Jynnmei/intro-to-mongoose-lab#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
