@@ -6,14 +6,15 @@ export const getCustomer = async (req, res) => {
   res.json(allCustomer); // 返回 JSON 数据到 Postman
 };
 
-// view all customer = POST(read)
-export const postCustomer = async (req, res) => {
-  const customer = await Customer.find({ _id: req.body.id });
+// view 1 customer = GET(read)
+export const findOneCustomerId = async (req, res) => {
+  const customer = await Customer.findById(req.params.id);
+
   res.json(customer);
 };
 
-// create = PUT
-export const putCustomer = async (req, res) => {
+// create = POST
+export const postCustomer = async (req, res) => {
   const newCustomer = new Customer({
     name: req.body.name,
     age: req.body.age,
